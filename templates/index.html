@@ -1,0 +1,29 @@
+  <html>
+  <head>
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+      
+      .bgi {
+        background-image: url("bg_neural.jpg");
+        height: 120%;
+        width: 100%; 
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+      }
+      </style>
+    <title>Facial Expression Recognition</title>
+  </head>
+  <div class="bgi">  
+    <body>
+      <center>
+        <h1 style="color:black; font-size: 50px;"><u> Facial Expression Recognition </u></h1>
+        <h3 style="color:black; font-size: 25px;">By: Sachin Sarkar</h3>
+        <img width=1080px height=720px src="{{ url_for('video_feed') }}">
+      </center>
+    </body>
+  </div>
+</html>
